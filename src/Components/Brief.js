@@ -7,10 +7,8 @@ export const Brief = () => {
     <Box
     sx={{
         backgroundPosition: "top right",
-        // height: "70vh",
         backgroundRepeat: "no-repeat",
         backgroundSize: "contain",
-        // position: "relative",
         backgroundImage:
           'url("https://www.analyticabi.app/Frontend/Visitor/HomePage/Images/landing-bg2.svg")',
         marginRight: "0",
