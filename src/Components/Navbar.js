@@ -71,11 +71,23 @@ export const Navbar = () => {
                 placeContent: "end",
               }}
             >
-              {pages.map((page) => (
+              {pages.map((page, index) => (
                 <Button
                   key={page}
+                  variant="outlined"
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "#5AC3BD", display: "block" }}
+                  sx={{
+                    my: 2, color: index % 2 === 0 ? "#5AC3BD" : "white",
+                    display: "block",
+                    borderRadius: '10px',
+                    borderColor: index % 2 === 0 ? '#5AC3BD' : "#df9f42",
+                    background: index % 2 === 0 ? 'white' : "#df9f42",
+                    bgcolor: index % 2 === 0 ? 'background.paper' : "#df9f42",
+                    mx: 2,
+                    px: 3,
+                    textTransform: 'none',
+                    border: 1,
+                  }}
                 >
                   {page}
                 </Button>
