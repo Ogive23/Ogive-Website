@@ -56,15 +56,15 @@ export const Brief = () => {
             placeholder
           </Typography>
           <Typography
-          
-          sx={{
-            alignSelf: 'start', color: '#6e898d', fontWeight: 'bold',
-            fontStretch: 'normal',
-            fontStyle: 'normal',
-            lineHeight: '2.0',
-            letterSpacing: 'normal',
-            fontSize: '4vh'
-          }}>
+
+            sx={{
+              alignSelf: 'start', color: '#6e898d', fontWeight: 'bold',
+              fontStretch: 'normal',
+              fontStyle: 'normal',
+              lineHeight: '2.0',
+              letterSpacing: 'normal',
+              fontSize: '4vh'
+            }}>
             Text commonly used to demonstrate the visual form of a
             document or a typeface without relying on meaningful content. Lorem
             ipsum may be used as a placeholder before the final copy is available.
