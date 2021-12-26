@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 export const Brief = () => {
   return (
     <Box
-    sx={{
+      sx={{
         backgroundPosition: "top right",
         backgroundRepeat: "no-repeat",
         backgroundSize: "contain",
@@ -33,19 +33,43 @@ export const Brief = () => {
           variant="h6"
           component="div"
           sx={{
-            mr: "35%",
+            mr: "40%",
             display: { md: "flex" },
             marginLeft: "5%",
             marginTop: "auto",
             marginBottom: "auto",
             height: "inherit",
             alignItems: "center",
+            justifyContent: "center",
+            flexDirection: "column"
           }}
         >
-          Ogive is In publishing and graphic design, Lorem ipsum is a
-          placeholder text commonly used to demonstrate the visual form of a
-          document or a typeface without relying on meaningful content. Lorem
-          ipsum may be used as a placeholder before the final copy is available.
+          <Typography sx={{
+            alignSelf: 'start', color: '#5ac3bd', fontWeight: 'bold',
+            fontStretch: 'normal',
+            fontStyle: 'normal',
+            lineHeight: '2.0',
+            letterSpacing: 'normal',
+            fontSize: '5vh'
+          }}>
+            Ogive is In publishing and graphic design, Lorem ipsum is a
+            placeholder
+          </Typography>
+          <Typography
+          
+          sx={{
+            alignSelf: 'start', color: '#6e898d', fontWeight: 'bold',
+            fontStretch: 'normal',
+            fontStyle: 'normal',
+            lineHeight: '2.0',
+            letterSpacing: 'normal',
+            fontSize: '4vh'
+          }}>
+            Text commonly used to demonstrate the visual form of a
+            document or a typeface without relying on meaningful content. Lorem
+            ipsum may be used as a placeholder before the final copy is available.
+          </Typography>
+
         </Typography>
       </Box>
     </Box>
