@@ -19,7 +19,7 @@ export const Brief = () => {
     >
       <Box
         sx={{
-          height: "70vh",
+          height: "90vh",
           position: "relative",
           marginRight: "0",
           marginLeft: "0",
