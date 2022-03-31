@@ -25,7 +25,6 @@ export const Projects = () => {
         updatedCards[index].isFlipped = !updatedCards[index].isFlipped;
         setCards(updatedCards);
     }
-
     return (
         <Box sx={{
             backgroundImage: 'url(https://d1l5pp53ux74mz.cloudfront.net/images/default-source/backgrounds/brand-refresh-q4-2021/home_hero_top_element.svg.svg?sfvrsn=6c39ecde_6)',
@@ -47,7 +46,7 @@ export const Projects = () => {
                 {
                     cards.map((card, index) => {
                         console.log(card);
-                        return <Grid item xs={4}>
+                        return <Grid item xs={4} key={card.image}>
                             <ReactCardFlip isFlipped={card.isFlipped} flipDirection="vertical" cardStyles={{ height: '30vh' }} containerStyle={{ height: '30vh' }} >
                                 <Box height={'30vh'} sx={{
                                     backgroundImage: 'url(' + card.image + ')',
